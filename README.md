@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💹 Finance & Economics — 5 AI Projects That Actually Matter
+# Finance & Economics -- 5 AI Projects That Actually Matter
 
 **Because money moves the world, and understanding it changes everything**
 
@@ -17,49 +17,49 @@
 
 ---
 
-## 💡 Why I Built These 5
+## Why I Built These 5
 
-Finance has always been about trust — trust between people, institutions, and systems. But that trust is fragile. Fraud quietly drains it. Churn silently breaks it. A market crash shatters it overnight. A single word in a news headline can move billions.
+Finance has always been about trust -- trust between people, institutions, and systems. But that trust is fragile. Fraud quietly drains it. Churn silently breaks it. A market crash shatters it overnight. A single word in a news headline can move billions.
 
-I chose these five projects not because they're impressive on paper, but because each one sits at a real fault line in the financial world — a place where a well-built model can quietly protect someone's savings, warn a business before it's too late, or help an ordinary person understand where the market is actually heading.
+I chose these five projects not because they look impressive on paper, but because each one sits at a real fault line in the financial world -- a place where a well-built model can quietly protect someone's savings, warn a business before it is too late, or help an ordinary person understand where the market is actually heading.
 
-These aren't toy problems. They're the kinds of questions that keep risk managers up at night and that algorithms are now quietly answering — sometimes better than humans.
-
----
-
-## 🔍 The Story Behind Each Project
-
-### 01 · Fraud Detection — *Protecting People Who Don't Know They Need Protection*
-
-Most fraud victims don't realise they've been targeted until days later. The damage is done — money gone, trust broken, hours spent on phone calls. A fraud detection model works silently in the background, scoring every transaction in milliseconds, catching the anomaly before it becomes a crisis. This project explores how machines learn to distinguish a genuine late-night purchase from a stolen card being drained across continents. The challenge isn't just accuracy — it's catching the rare, subtle attack without crying wolf on legitimate transactions.
+These are not toy problems. They are the kinds of questions that keep risk managers up at night and that algorithms are now quietly answering -- sometimes better than humans.
 
 ---
 
-### 02 · Customer Churn Prediction — *Listening Before Someone Walks Away*
+## The Story Behind Each Project
 
-A customer who is about to leave a bank rarely announces it. The signals are quiet — fewer logins, lower balances, one complaint too many. This project is about learning to listen to those signals before the goodbye. It's not about retention campaigns or growth metrics. It's about genuinely understanding when a relationship is breaking down and giving businesses a chance to respond with something human — a better rate, a personal call, a reason to stay.
+### 01 - Fraud Detection -- Protecting People Who Don't Know They Need Protection
 
----
-
-### 03 · Trading Signal Generation — *Making Sense of the Market's Own Language*
-
-Markets speak in patterns — in the rhythm of moving averages, in the momentum of price swings, in the tension of a Bollinger Band squeeze before a breakout. Traders have read these signals by hand for decades. This project teaches a machine to read that same language — combining MACD, RSI, and Bollinger Bands into a coherent strategy, then testing it honestly against real historical data. Not to get rich, but to understand how structured thinking turns noise into signal.
+Most fraud victims don't realise they have been targeted until days later. The damage is done -- money gone, trust broken, hours spent on phone calls. A fraud detection model works silently in the background, scoring every transaction in milliseconds, catching the anomaly before it becomes a crisis. This project explores how machines learn to distinguish a genuine late-night purchase from a stolen card being drained across continents. The challenge isn't just accuracy -- it's catching the rare, subtle attack without crying wolf on legitimate transactions.
 
 ---
 
-### 04 · Financial Sentiment Analysis — *Words Move Markets*
+### 02 - Customer Churn Prediction -- Listening Before Someone Walks Away
 
-A CEO's tone in an earnings call, a regulatory headline at 9am, a tweet about supply chain disruption — language shapes financial reality every single day. This project asks a fascinating question: can a machine read the mood of the market from text alone? Using VADER and TextBlob across real headlines from Apple, Microsoft, Google, Amazon, and Nvidia, it explores how sentiment flows through the news cycle and whether it carries a tradable signal. It's NLP meets finance, and the intersection is full of surprises.
-
----
-
-### 05 · Bankruptcy Prediction — *Seeing the Cliff Before the Edge*
-
-A company rarely collapses overnight. The warning signs are written in the balance sheet — rising debt, shrinking liquidity, interest payments that are starting to hurt. The Altman Z-Score has been predicting bankruptcy since 1968 using just five financial ratios. This project pairs that classic model with modern machine learning to see how much better we can do. The goal isn't morbid — it's protective. Early warning gives stakeholders time to act: restructure, renegotiate, or simply make an informed decision before the fall.
+A customer who is about to leave a bank rarely announces it. The signals are quiet -- fewer logins, lower balances, one complaint too many. This project is about learning to listen to those signals before the goodbye. It is not about retention campaigns or growth metrics. It is about genuinely understanding when a relationship is breaking down and giving businesses a chance to respond with something human -- a better rate, a personal call, a reason to stay.
 
 ---
 
-## ⚡ Quick Start
+### 03 - Trading Signal Generation -- Making Sense of the Market's Own Language
+
+Markets speak in patterns -- in the rhythm of moving averages, in the momentum of price swings, in the tension of a Bollinger Band squeeze before a breakout. Traders have read these signals by hand for decades. This project teaches a machine to read that same language -- combining MACD, RSI, and Bollinger Bands into a coherent strategy, then testing it honestly against real historical data. Not to get rich, but to understand how structured thinking turns noise into signal.
+
+---
+
+### 04 - Financial Sentiment Analysis -- Words Move Markets
+
+A CEO's tone in an earnings call, a regulatory headline at 9am, a tweet about supply chain disruption -- language shapes financial reality every single day. This project asks a fascinating question: can a machine read the mood of the market from text alone? Using VADER and TextBlob across real headlines from Apple, Microsoft, Google, Amazon, and Nvidia, it explores how sentiment flows through the news cycle and whether it carries a tradable signal. It is NLP meets finance, and the intersection is full of surprises.
+
+---
+
+### 05 - Bankruptcy Prediction -- Seeing the Cliff Before the Edge
+
+A company rarely collapses overnight. The warning signs are written in the balance sheet -- rising debt, shrinking liquidity, interest payments that are starting to hurt. The Altman Z-Score has been predicting bankruptcy since 1968 using just five financial ratios. This project pairs that classic model with modern machine learning to see how much better we can do. The goal is not morbid -- it is protective. Early warning gives stakeholders time to act: restructure, renegotiate, or simply make an informed decision before the fall.
+
+---
+
+## Quick Start
 
 ```bash
 git clone https://github.com/parthInAI/finance-economics.git
@@ -69,7 +69,7 @@ python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# Download NLTK & TextBlob language data
+# Download NLTK and TextBlob language data
 python -c "import nltk; nltk.download('vader_lexicon')"
 python -c "from textblob import download_corpora; download_corpora()"
 
@@ -85,48 +85,48 @@ python project_05_bankruptcy_prediction.py
 
 ---
 
-## 🗂️ Project Overview
+## Project Overview
 
 | # | File | Core Method | Output |
 |---|------|-------------|--------|
-| 01 | `project_01_fraud_detection.py` | Random Forest · Gradient Boosting · Logistic Regression | ROC, PR-curve, confusion matrix, feature importance |
-| 02 | `project_02_churn_prediction.py` | Gradient Boosting · Random Forest · Logistic Regression | Risk bands, retention engine, segment analysis |
-| 03 | `project_03_trading_signals.py` | MACD · RSI · Bollinger Bands · Backtesting | 4-panel chart, strategy vs buy-and-hold |
-| 04 | `project_04_sentiment_analysis.py` | VADER · TextBlob · Rolling composite score | 5-panel NLP dashboard, BUY/SELL/HOLD signals |
-| 05 | `project_05_bankruptcy_prediction.py` | Altman Z-Score · Random Forest · Gradient Boosting | Risk tiering, ML vs Z-Score scatter, screening demo |
+| 01 | `project_01_fraud_detection.py` | Random Forest, Gradient Boosting, Logistic Regression | ROC, PR-curve, confusion matrix, feature importance |
+| 02 | `project_02_churn_prediction.py` | Gradient Boosting, Random Forest, Logistic Regression | Risk bands, retention engine, segment analysis |
+| 03 | `project_03_trading_signals.py` | MACD, RSI, Bollinger Bands, Backtesting | 4-panel chart, strategy vs buy-and-hold |
+| 04 | `project_04_sentiment_analysis.py` | VADER, TextBlob, Rolling composite score | 5-panel NLP dashboard, BUY/SELL/HOLD signals |
+| 05 | `project_05_bankruptcy_prediction.py` | Altman Z-Score, Random Forest, Gradient Boosting | Risk tiering, ML vs Z-Score scatter, screening demo |
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Library | Purpose |
 |---------|---------|
-| **scikit-learn** | ML models (RF, GB, LR), metrics, preprocessing |
-| **pandas / NumPy** | Data manipulation, feature engineering |
-| **Matplotlib** | Dark-mode multi-panel dashboards |
-| **yfinance** | Real-time & historical stock market data |
-| **TextBlob** | NLP — polarity & subjectivity sentiment |
-| **NLTK VADER** | Finance-tuned lexicon sentiment scoring |
-| **statsmodels** | Time series, econometrics |
-| **scipy** | Statistical functions |
+| scikit-learn | ML models (RF, GB, LR), metrics, preprocessing |
+| pandas / NumPy | Data manipulation, feature engineering |
+| Matplotlib | Dark-mode multi-panel dashboards |
+| yfinance | Real-time and historical stock market data |
+| TextBlob | NLP -- polarity and subjectivity sentiment |
+| NLTK VADER | Finance-tuned lexicon sentiment scoring |
+| statsmodels | Time series, econometrics |
+| scipy | Statistical functions |
 
 ---
 
-## 📊 Output Charts
+## Output Charts
 
 Each project saves a high-resolution dashboard to the `outputs/` folder:
 
 ```
 outputs/
-├── 01_fraud_detection.png        # ROC, PR-curve, confusion matrix, feature importance
-├── 02_churn_prediction.png       # Churn by segment, score distribution, model comparison
-├── 03_trading_signals.png        # Price + MACD + RSI + portfolio backtest timeline
-├── 04_sentiment_analysis.png     # Sentiment timeline, TextBlob vs VADER, signal overlay
-└── 05_bankruptcy_prediction.png  # Z-Score distribution, ML vs Altman scatter, risk tiers
+|-- 01_fraud_detection.png        # ROC, PR-curve, confusion matrix, feature importance
+|-- 02_churn_prediction.png       # Churn by segment, score distribution, model comparison
+|-- 03_trading_signals.png        # Price + MACD + RSI + portfolio backtest timeline
+|-- 04_sentiment_analysis.png     # Sentiment timeline, TextBlob vs VADER, signal overlay
+|-- 05_bankruptcy_prediction.png  # Z-Score distribution, ML vs Altman scatter, risk tiers
 ```
 
 ---
 
-## 📄 License
+## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT -- see [LICENSE](LICENSE) for details.
