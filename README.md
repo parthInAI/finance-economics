@@ -1,132 +1,119 @@
-<div align="center">
+# Finance and Economics AI -- 5 Projects
 
-# Finance & Economics -- 5 AI Projects That Actually Matter
-
-**Because money moves the world, and understanding it changes everything**
-
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Models-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org)
-[![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
-[![NumPy](https://img.shields.io/badge/NumPy-Numerical-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org)
-[![NLTK](https://img.shields.io/badge/NLTK-NLP-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.nltk.org)
-[![yfinance](https://img.shields.io/badge/yfinance-Market%20Data-00C805?style=for-the-badge&logo=yahoo&logoColor=white)](https://pypi.org/project/yfinance)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-
-</div>
+Five end-to-end quantitative models applied to real financial problems. Each project follows a full ML pipeline: data acquisition, EDA, feature engineering, model training, evaluation, and business-level interpretation of results.
 
 ---
 
-## Why I Built These 5
+## Projects
 
-Finance has always been about trust -- trust between people, institutions, and systems. But that trust is fragile. Fraud quietly drains it. Churn silently breaks it. A market crash shatters it overnight. A single word in a news headline can move billions.
+### 1. Fraud Detection on Imbalanced Data
 
-I chose these five projects not because they look impressive on paper, but because each one sits at a real fault line in the financial world -- a place where a well-built model can quietly protect someone's savings, warn a business before it is too late, or help an ordinary person understand where the market is actually heading.
+Detects fraudulent transactions from a heavily imbalanced dataset (fraud cases are less than 1% of records).
 
-These are not toy problems. They are the kinds of questions that keep risk managers up at night and that algorithms are now quietly answering -- sometimes better than humans.
+- SMOTE oversampling and class weighting strategies
+- XGBoost and Random Forest with threshold tuning
+- Precision-recall optimisation over accuracy (accuracy is misleading on imbalanced data)
+- Feature importance analysis identifying top fraud signals
 
----
-
-## The Story Behind Each Project
-
-### 01 - Fraud Detection -- Protecting People Who Don't Know They Need Protection
-
-Most fraud victims don't realise they have been targeted until days later. The damage is done -- money gone, trust broken, hours spent on phone calls. A fraud detection model works silently in the background, scoring every transaction in milliseconds, catching the anomaly before it becomes a crisis. This project explores how machines learn to distinguish a genuine late-night purchase from a stolen card being drained across continents. The challenge isn't just accuracy -- it's catching the rare, subtle attack without crying wolf on legitimate transactions.
+**Business relevance:** False negatives cost money; false positives cost customers. This project models the real trade-off.
 
 ---
 
-### 02 - Customer Churn Prediction -- Listening Before Someone Walks Away
+### 2. Customer Churn Prediction with Retention Engine
 
-A customer who is about to leave a bank rarely announces it. The signals are quiet -- fewer logins, lower balances, one complaint too many. This project is about learning to listen to those signals before the goodbye. It is not about retention campaigns or growth metrics. It is about genuinely understanding when a relationship is breaking down and giving businesses a chance to respond with something human -- a better rate, a personal call, a reason to stay.
+Predicts which customers are likely to leave and automatically generates retention recommendations.
 
----
+- Logistic regression, gradient boosting, and neural network comparison
+- SHAP values for per-customer explainability
+- Automated retention action engine based on churn probability and customer segment
+- Cohort analysis identifying highest-risk customer groups
 
-### 03 - Trading Signal Generation -- Making Sense of the Market's Own Language
-
-Markets speak in patterns -- in the rhythm of moving averages, in the momentum of price swings, in the tension of a Bollinger Band squeeze before a breakout. Traders have read these signals by hand for decades. This project teaches a machine to read that same language -- combining MACD, RSI, and Bollinger Bands into a coherent strategy, then testing it honestly against real historical data. Not to get rich, but to understand how structured thinking turns noise into signal.
-
----
-
-### 04 - Financial Sentiment Analysis -- Words Move Markets
-
-A CEO's tone in an earnings call, a regulatory headline at 9am, a tweet about supply chain disruption -- language shapes financial reality every single day. This project asks a fascinating question: can a machine read the mood of the market from text alone? Using VADER and TextBlob across real headlines from Apple, Microsoft, Google, Amazon, and Nvidia, it explores how sentiment flows through the news cycle and whether it carries a tradable signal. It is NLP meets finance, and the intersection is full of surprises.
+**Business relevance:** Retaining a customer costs a fraction of acquiring a new one. Explainability matters because retention actions differ by churn reason.
 
 ---
 
-### 05 - Bankruptcy Prediction -- Seeing the Cliff Before the Edge
+### 3. Algorithmic Trading with Backtesting
 
-A company rarely collapses overnight. The warning signs are written in the balance sheet -- rising debt, shrinking liquidity, interest payments that are starting to hurt. The Altman Z-Score has been predicting bankruptcy since 1968 using just five financial ratios. This project pairs that classic model with modern machine learning to see how much better we can do. The goal is not morbid -- it is protective. Early warning gives stakeholders time to act: restructure, renegotiate, or simply make an informed decision before the fall.
+Generates buy/sell signals using technical indicators and backtests on real historical price data.
+
+- MACD and RSI signal generation
+- yfinance API for real market data (5 tickers)
+- Backtesting engine with transaction cost modelling
+- Sharpe ratio, drawdown, and win rate performance metrics
+
+**Business relevance:** A strategy that looks good in-sample often fails out-of-sample. The backtesting framework here enforces walk-forward validation.
 
 ---
 
-## Quick Start
+### 4. Financial News Sentiment Analysis
+
+Classifies financial news headlines as positive, negative, or neutral and correlates sentiment with price movement.
+
+- VADER sentiment scoring on 5 tickers
+- NLTK preprocessing pipeline
+- Sentiment-price correlation analysis with lag testing
+- Rolling sentiment window for trend detection
+
+**Business relevance:** Market sentiment is a leading indicator. This project quantifies how news sentiment correlates with short-term price movement.
+
+---
+
+### 5. Corporate Bankruptcy Prediction
+
+Predicts corporate bankruptcy risk by combining classical financial ratios with machine learning.
+
+- Altman Z-Score as a feature (classical bankruptcy model from 1968)
+- Gradient boosting trained on financial statement data
+- Comparison of classical vs ML approaches
+- Risk scoring output for portfolio screening
+
+**Business relevance:** The Altman Z-Score is still widely used in credit analysis. This project shows when ML meaningfully outperforms the classical model and when it does not.
+
+---
+
+## Tech stack
+
+| Component | Technology |
+|---|---|
+| Modelling | scikit-learn, XGBoost, gradient boosting |
+| Market data | yfinance |
+| NLP | NLTK, VADER |
+| Classical models | Altman Z-Score |
+| Explainability | SHAP |
+| Data processing | pandas, NumPy |
+
+---
+
+## Getting started
 
 ```bash
-git clone https://github.com/parthInAI/finance-economics.git
+git clone https://github.com/parthInAI/finance-economics
 cd finance-economics
 
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# Download NLTK and TextBlob language data
-python -c "import nltk; nltk.download('vader_lexicon')"
-python -c "from textblob import download_corpora; download_corpora()"
-
-mkdir -p outputs
-
-# Run any project
-python project_01_fraud_detection.py
-python project_02_churn_prediction.py
-python project_03_trading_signals.py
-python project_04_sentiment_analysis.py
-python project_05_bankruptcy_prediction.py
+# Each project has its own notebook
+jupyter notebook fraud_detection/fraud_detection.ipynb
+jupyter notebook churn/churn_prediction.ipynb
+jupyter notebook trading/algorithmic_trading.ipynb
+jupyter notebook sentiment/sentiment_analysis.ipynb
+jupyter notebook bankruptcy/bankruptcy_prediction.ipynb
 ```
 
 ---
 
-## Project Overview
+## Skills demonstrated
 
-| # | File | Core Method | Output |
-|---|------|-------------|--------|
-| 01 | `project_01_fraud_detection.py` | Random Forest, Gradient Boosting, Logistic Regression | ROC, PR-curve, confusion matrix, feature importance |
-| 02 | `project_02_churn_prediction.py` | Gradient Boosting, Random Forest, Logistic Regression | Risk bands, retention engine, segment analysis |
-| 03 | `project_03_trading_signals.py` | MACD, RSI, Bollinger Bands, Backtesting | 4-panel chart, strategy vs buy-and-hold |
-| 04 | `project_04_sentiment_analysis.py` | VADER, TextBlob, Rolling composite score | 5-panel NLP dashboard, BUY/SELL/HOLD signals |
-| 05 | `project_05_bankruptcy_prediction.py` | Altman Z-Score, Random Forest, Gradient Boosting | Risk tiering, ML vs Z-Score scatter, screening demo |
-
----
-
-## Tech Stack
-
-| Library | Purpose |
-|---------|---------|
-| scikit-learn | ML models (RF, GB, LR), metrics, preprocessing |
-| pandas / NumPy | Data manipulation, feature engineering |
-| Matplotlib | Dark-mode multi-panel dashboards |
-| yfinance | Real-time and historical stock market data |
-| TextBlob | NLP -- polarity and subjectivity sentiment |
-| NLTK VADER | Finance-tuned lexicon sentiment scoring |
-| statsmodels | Time series, econometrics |
-| scipy | Statistical functions |
+- Imbalanced classification and threshold optimisation
+- SHAP explainability for business decisions
+- Technical indicator engineering and backtesting
+- Sentiment analysis on financial text
+- Classical and ML model comparison
+- End-to-end pipeline from raw data to business insight
 
 ---
 
-## Output Charts
+## Related projects
 
-Each project saves a high-resolution dashboard to the `outputs/` folder:
-
-```
-outputs/
-|-- 01_fraud_detection.png        # ROC, PR-curve, confusion matrix, feature importance
-|-- 02_churn_prediction.png       # Churn by segment, score distribution, model comparison
-|-- 03_trading_signals.png        # Price + MACD + RSI + portfolio backtest timeline
-|-- 04_sentiment_analysis.png     # Sentiment timeline, TextBlob vs VADER, signal overlay
-|-- 05_bankruptcy_prediction.png  # Z-Score distribution, ML vs Altman scatter, risk tiers
-```
-
----
-
-## License
-
-MIT -- see [LICENSE](LICENSE) for details.
+- [Term Deposit Prediction](https://github.com/parthInAI/Data-Analytics-term-deposit-prediction) — banking analytics
+- [Portfolio](https://parthinai.github.io/)
