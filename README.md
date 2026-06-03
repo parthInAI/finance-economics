@@ -1,4 +1,4 @@
-# Finance and Economics AI -- 5 Projects
+# Finance and Economics AI - 5 Projects
 
 Five end-to-end quantitative models applied to real financial problems. Each project follows a full ML pipeline: data acquisition, EDA, feature engineering, model training, evaluation, and business-level interpretation of results.
 
